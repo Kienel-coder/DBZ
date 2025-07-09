@@ -302,12 +302,15 @@
             //Přidaz posluchač události pro změnu velikosti okna
             window.addEventListener('resize', updateContentBasedOnWidth);
 
-if (window.matchMedia("(max-width: 767px)").matches) {
-    alert("Mobil");
-} else if (window.matchMedia("(max-width: 1024px)").matches) {
-    alert("Tablet");
+		    const sirka = window.innerWidth;
+
+
+if (sirka <= 767) {
+  alert("Mobil");
+} else if (sirka >= 768 && sirka <= 1024) {
+  alert("Tablet");
 } else {
-    alert("Desktop");
+  alert("Desktop");
 }
        </script>
 	
