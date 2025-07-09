@@ -1,0 +1,2 @@
+V souboru "Sidebar.woff2" jsou uloženy ikony pro hlavní menu a boční lištu
+(Odkaz na tento soubor je uveden v "CSS" - "bootstrap.min"
