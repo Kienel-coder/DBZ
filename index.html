@@ -329,6 +329,10 @@ alert("Displej je otočen:", orientace);
 		    window.addEventListener('resize', () => {
   setTimeout(zjistiZarizeni, 300);
 });
+
+		    window.addEventListener("orientationchange", () => {
+  setTimeout(zjistiZarizeni, 300);
+});
        </script>
 	
 
