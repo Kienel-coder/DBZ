@@ -22,7 +22,7 @@
 
 .menu-iconHamburger {
     font-size: 25px;
-	width: 45px;
+	width: 25px;
     cursor: pointer;
 	visibility: visible;
 }
@@ -36,7 +36,7 @@
     border: 1px solid #ddd; /* Okraje menu */
     padding: 10px;
     border-radius: 4px;
-    width: 200px; /* Pevná šířka menu */
+    width: 400px; /* Pevná šířka menu */
 	
     position: fixed; /* Fixní pozice */
     top: 60; /* Umístění od horního okraje */
