@@ -139,7 +139,7 @@
 
 }
 
-/* 💻 TABLET a menší DESKTOP (768px až 1024px) */
+/* 💻 TABLET a menší DESKTOP (768px až 1024px) můj telefon*/
 @media (min-width : 768px ) and ( max-width : 1024px ){
      .darkTheme
      {
