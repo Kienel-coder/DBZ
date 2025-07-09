@@ -299,39 +299,36 @@
             //Zavolat funkci při načtení stránky
             updateContentBasedOnWidth();
 
-            //Přidaz posluchač události pro změnu velikosti okna
-            window.addEventListener('resize', updateContentBasedOnWidth);
+function zjistiZarizeni() {
+    const sirka = window.innerWidth;
+    const vyska = window.innerHeight;
+    const orientace = (sirka > vyska) ? "na šířku" : "na výšku";
 
+    let typ;
+    if (sirka <= 767) {
+        typ = "Mobil";
+    } else if (sirka <= 1024) {
+        typ = "Tablet";
+    } else {
+        typ = "Desktop";
+    }
 
-
-
-		    const orientace = (window.innerWidth > window.innerHeight) ? "na šířku" : "na výšku";
-alert("Displej je otočen:", orientace);
-
-		    function zjistiZarizeni() {
-  const sirka = window.innerWidth;
-  const vyska = window.innerHeight;
-  const orientace = (sirka > vyska) ? "na šířku" : "na výšku";
-
-  let typ;
-
-  if (sirka <= 767) {
-    typ = "Mobil";
-  } else if (sirka <= 1024) {
-    typ = "Tablet";
-  } else {
-    typ = "Desktop";
-  }
-
-  alert(`Zařízení: ${typ}, Orientace: ${orientace}, Šířka: ${sirka}, Výška: ${vyska}`);
+    const zprava = `Zařízení: ${typ}, Displej: ${orientace}, Šířka: ${sirka}px, Výška: ${vyska}px`;
+    console.log(zprava);
+    document.getElementById("vystup").textContent = zprava;
 }
 
-		    window.addEventListener('resize', () => {
-  setTimeout(zjistiZarizeni, 300);
+// Spustit ihned
+zjistiZarizeni();
+
+// Reagovat na změnu velikosti okna
+window.addEventListener('resize', () => {
+    setTimeout(zjistiZarizeni, 200);
 });
 
-		    window.addEventListener("orientationchange", () => {
-  setTimeout(zjistiZarizeni, 300);
+// Reagovat na otočení displeje (hlavně pro mobily/tablety)
+window.addEventListener('orientationchange', () => {
+    setTimeout(zjistiZarizeni, 200);
 });
        </script>
 	
