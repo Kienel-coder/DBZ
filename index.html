@@ -302,16 +302,33 @@
             //Přidaz posluchač události pro změnu velikosti okna
             window.addEventListener('resize', updateContentBasedOnWidth);
 
-		    const sirka = window.innerWidth;
 
-alert(sirka);
-if (sirka <= 767) {
-  alert("Mobil2");
-} else if (sirka >= 768 && sirka <= 1024) {
-  alert("Tablet2");
-} else {
-  alert("Desktop2");
+
+
+		    const orientace = (window.innerWidth > window.innerHeight) ? "na šířku" : "na výšku";
+alert("Displej je otočen:", orientace);
+
+		    function zjistiZarizeni() {
+  const sirka = window.innerWidth;
+  const vyska = window.innerHeight;
+  const orientace = (sirka > vyska) ? "na šířku" : "na výšku";
+
+  let typ;
+
+  if (sirka <= 767) {
+    typ = "Mobil";
+  } else if (sirka <= 1024) {
+    typ = "Tablet";
+  } else {
+    typ = "Desktop";
+  }
+
+  alert(`Zařízení: ${typ}, Orientace: ${orientace}, Šířka: ${sirka}, Výška: ${vyska}`);
 }
+
+		    window.addEventListener('resize', () => {
+  setTimeout(zjistiZarizeni, 300);
+});
        </script>
 	
 
