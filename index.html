@@ -302,11 +302,13 @@
             //Přidaz posluchač události pro změnu velikosti okna
             window.addEventListener('resize', updateContentBasedOnWidth);
 
-  if (window.matchMedia("(min-width : 768px ) and ( max-width : 1024px )").matches) {
-    alert("Je to telefon!");
-  } else {
-    alert("Je to jiná šířka (tablet nebo desktop2)!");
-  }
+if (window.matchMedia("(max-width: 767px)").matches) {
+    alert("Mobil");
+} else if (window.matchMedia("(max-width: 1024px)").matches) {
+    alert("Tablet");
+} else {
+    alert("Desktop");
+}
        </script>
 	
 
