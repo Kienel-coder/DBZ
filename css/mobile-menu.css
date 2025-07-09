@@ -91,64 +91,111 @@
 /* ---------------------------------------------------
     vzor
 ----------------------------------------------------- */
-
-//////////////////////
-///
-//
-//
-
-/* 📱 MOBIL (do 767px) */
-@media (max-width: 767px) {
-  .darkTheme {
-    display: none;
-  }
-
-  .menu-iconHamburger {
-    display: inline-block;
+/* 📱 Menší MOBIL (do 480px) */
+/* Styl pro mobilní zařízení (menší než 480px) */
+@media (max-width : 479px ){
+	 .darkTheme
+     {
+     display: none;
+     }
+	
+    .menu-iconHamburger {
     font-size: 25px;
-    width: 25px;
+	width: 25px;
     cursor: pointer;
-    padding: 0;
-  }
-
-  .NapisDivadlo {
-    font-size: 1.1em;
-  }
+    padding: 0px 0px 0px 0px;
+    }
+	
+	.NapisDivadlo{
+	font-size: 1.1em;
+		
+    }
+	
+	/*.NapisDivadlo::after {
+    content: "222";  Text, který bude přidán za obsah 
+    font-size: 9.1.9em; Velikost písma pro přidaný text 
+    color: red;  Barva přidaného textu 
+    }*/
 }
 
-/* 💻 TABLET (768px až 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .darkTheme {
-    display: none;
-  }
 
-  .menu-iconHamburger {
-    display: inline-block;
-    font-size: 35px;
-    width: 35px;
+/* 📱 MOBIL (do 768px) */
+@media (min-width : 480px ) and ( max-width : 767px ){
+	 .darkTheme
+     {
+     display: none;
+     }
+	
+    .menu-iconHamburger {
+    font-size: 45px;
+	width: 45px;
     cursor: pointer;
-    padding: 0;
-  }
+    padding: 0px 0px 0px 0px;
+    }
+	
+	.NapisDivadlo{
+	font-size: 1.1em;
+    }
 
-  .NapisDivadlo {
-    font-size: 1.1em;
-  }
 }
 
-/* 🖥️ DESKTOP (1024px a víc) */
-@media (min-width: 1024px) {
-  .darkTheme {
-    display: block;
-    padding: 5px 25px 0 5px;
-    font-family: cursive;
-    font-size: 0.45em;
-  }
-
-  .menu-iconHamburger {
-    display: none;
-  }
-
-  .NapisDivadlo {
-    font-size: 0.8em;
-  }
+/* 💻 TABLET a menší DESKTOP (768px až 1024px) */
+@media (min-width : 768px ) and ( max-width : 1024px ){
+     .darkTheme
+     {
+     display: none;
+     }
+	
+    .menu-iconHamburger {
+    font-size: 25px;
+	width: 25px;
+    cursor: pointer;
+    padding: 0px 0px 0px 0px;
+    }
+	
+	.NapisDivadlo{
+	font-size: 1.1em;
+    }
 }
+
+/* 🖥️ DESKTOP (1025px a víc) */
+@media (min-width : 1025px ) and ( max-width : 1348px ){
+.darkTheme
+{
+  padding: 5px 25px 0px 5px;
+  font-family: cursive;
+  font-size: 0.45em;
+}
+    .menu-iconHamburger {
+    font-size: 25px;
+	width: 25px;
+    cursor: pointer;
+	display: none;
+    padding: 0px 0px 0px 0px;
+    }
+	
+	.NapisDivadlo{
+	font-size: 0.8em;
+    }
+}
+
+/* 🖥️ DESKTOP (Extra velký desktop) */
+@media (min-width : 1349px ){
+    .menu-iconHamburger {
+    font-size: 25px;
+	width: 25px;
+    cursor: pointer;
+	display: none;
+    padding: 0px 0px 0px 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
