@@ -77,7 +77,7 @@
 .Uvitani {
 	font-family: "Times New Roman", Times, serif;
 	font-family: cursive;
-    font-size: 125px;
+    font-size: 25px;
 	text-align: center; /* Horizontální zarovnání obsahu na střed */
 	
 	           color: white; /* Barva textu */
@@ -87,7 +87,7 @@
                 0 0 5px blue, /* Ještě silnější modrá záře */
                 0 0 2px blue; /* Největší modrá záře */
         }
-}
+
 /* ---------------------------------------------------
     vzor
 ----------------------------------------------------- */
@@ -156,6 +156,9 @@
 	.NapisDivadlo{
 	font-size: 1.8em;
     }
+	  .Uvitani {
+    font-size: 24px;
+  }
 }
 
 /* 🖥️ DESKTOP (1025px a víc) */
