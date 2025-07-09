@@ -75,8 +75,7 @@
     Text h1 - Uvitani
 ----------------------------------------------------- */
 .Uvitani {
-	font-family: "Times New Roman", Times, serif;
-	font-family: cursive;
+    font-family: 'Dancing Script', cursive;
     font-size: 25px;
 	text-align: center; /* Horizontální zarovnání obsahu na střed */
 	
