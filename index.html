@@ -301,6 +301,10 @@
 
             //Přidaz posluchač události pro změnu velikosti okna
             window.addEventListener('resize', updateContentBasedOnWidth);
+
+		    if (window.matchMedia("(max-width: 600px)").matches) {
+  console.log("Je to mobil!");
+}
        </script>
 	
 
