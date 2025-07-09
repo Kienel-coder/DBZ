@@ -3,7 +3,7 @@
 ----------------------------------------------------- */
 .menu-iconZivyKraj {
     font-size: 25px;
-	width: 25px;
+	width: 55px;
     cursor: pointer;
 	visibility: visible;
 	margin-left: auto;
@@ -11,7 +11,7 @@
 
 .menu-iconKarlovarskyKraj {
     font-size: 25px;
-	width: 25px;
+	width: 55px;
     cursor: pointer;
 	visibility: visible;
 }
