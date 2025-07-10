@@ -125,7 +125,7 @@
 }
 
 
-/* 📱 MOBIL (do 768px) - můj telefon*/
+/* 📱 MOBIL (do 768px) */
 @media (min-width : 480px ) and ( max-width : 767px ){
 	 .darkTheme
      {
@@ -145,7 +145,7 @@
 
 }
 
-/* 💻 TABLET a menší DESKTOP (768px až 1024px) */
+/* 💻 TABLET a menší DESKTOP (768px až 1024px) - můj telefon*/
 @media (min-width : 768px ) and ( max-width : 1024px ){
      .darkTheme
      {
@@ -160,11 +160,11 @@
     }
 	
 	.NapisDivadlo{
-	font-size: 1.8em;
+	font-size: 45px;
     }
 	  .Uvitani {
 		  font-family: 'EB Garamond', serif;
-    font-size: 24px;
+    font-size: 50px;
   }
 
 	.menu-iconKarlovarskyKraj {
