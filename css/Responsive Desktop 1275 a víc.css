@@ -1,0 +1,76 @@
+/* DESKTOP (1075px a víc) */
+@media (min-width : 1275px ) and ( max-width : 1348px ){
+.darkTheme
+{
+	margin-left: 1px;
+  padding: 5px 25px 0px 5px;
+  font-family: cursive;
+  font-size: 12px;
+}
+	
+
+	
+.right-icons {
+
+  position: fixed;       /* pevná pozice vzhledem k oknu */
+  top: 30px;             /* odsazení od horního okraje, můžeš upravit */
+  right: 0;              /* úplně na pravý okraj okna */
+  display: flex;         /* aby byly vedle sebe */
+  gap: 10px;             /* mezera mezi ikonami */
+  padding-right: 10px;   /* odsazení od pravého okraje, můžeš upravit na 0 */
+  background: transparent; /* pokud chceš, aby pozadí nebylo */
+  z-index: 1000;         /* aby byly nad ostatním obsahem */
+}
+
+.right-icons a img {
+  width: 45px;
+  height: 45px;
+  display: block;
+  cursor: pointer;
+}
+    .menu-iconHamburger {
+    font-size: 25px;
+	width: 25px;
+    cursor: pointer;
+	display: none;
+    padding: 0px 0px 0px 0px;
+    }
+	  .LogoDivadlo {
+    width: 80px;
+  }
+	.NapisDivadlo{
+	font-size: 30px;
+		white-space: nowrap; /*zabrání zalomení textu*/
+    }
+	  .menu-iconKarlovarskyKraj img {
+    width: 40px;
+    height: 40px;
+  }
+  .menu-iconZivyKraj img {
+    width: 40px;
+    height: 40px;
+  }
+		.HorniLista /*opona*/
+{
+	height: 93px;
+  background: darkred;
+  background:url(../images/Opona.png); 
+  padding: 5px 25px 5px 5px;
+  font-family: "Times New Roman", Times, serif;
+  font-family: cursive;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center; /* Vertikální zarovnání na stred */
+  gap: 20px; /* Vzdálenost mezi jednotlivými ikonami */
+}
+		#HorniListaBilyPodklad 
+{
+	position: fixed;
+	width: 100%;
+	height:105px;
+	padding: 5px 5px 0px 5px;
+    background: white;
+    color:white;
+	align-items: center; /* Vertikální zarovnání na stred */
+	z-index: 1000; /* Zajistí, že menu bude nad ostatním obsahem */  
+}

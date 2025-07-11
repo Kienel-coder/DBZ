@@ -47,6 +47,7 @@
 	
 	<!-- Přidání vlastního CSS pro responsivní vzhled -->
     <link rel="stylesheet" href="css/Responsive Extra velký display.css">
+	<link rel="stylesheet" href="css/Responsive Desktop 1275 a víc.css">
 	
     <!-- Script nutný pro AdobeAnimate-->
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>	
@@ -61,7 +62,9 @@
 
 <!-- Horní lišta -->
 <!-- ////////////////////////////////////-->
+	
 <nav id="HorniListaBilyPodklad">
+	
     <div class="HorniLista">
         <img class="LogoDivadlo" src="images/Divadlo.jpg" alt="Divadlo bez zákulisí" width="60">  
         <span class="NapisDivadlo">Divadlo bez zákulisí</span>
@@ -148,16 +151,7 @@
         </ul>
 		</div>
 		
-		  <a class="menu-iconZivyKraj" data-type="Custom" title="Živý kraj" href="https://zivykraj.cz/">
-		  <span><img src="images/ivkraj.png" alt="" width="25" height="25" ></span>
-          </a>
-		
-          <a class="menu-iconKarlovarskyKraj" data-type="Custom" title="Karlovarský kraj" href="https://www.kr-karlovarsky.cz/">
-          <span><img src="images/Karlovarskkraj.png" alt="Karlovarský kraj" width="25" height="25"></span>
-          </a>
-		
-		  <a class="menu-iconHamburger" data-type="Custom" title="Menu" onclick="toggleMenu()"><span>&#9776; <!-- Unicode znak pro hamburger menu --></span> 
-           </a>
+
     </div><!-- konec horní lišty -->
 	
 	<!-- Hamburger Menu, které se zobrazí při kliknutí -->
@@ -241,7 +235,15 @@
                 </li>
         </ul>
     </div>
-	
+	    <!-- Přidáme nový wrapper pro ikony na pravé straně -->
+    <div class="right-icons">
+      <a class="menu-iconZivyKraj" data-type="Custom" title="Živý kraj" href="https://zivykraj.cz/">
+        <img src="images/ivkraj.png" alt="" width="25" height="25" >
+      </a>
+      <a class="menu-iconKarlovarskyKraj" data-type="Custom" title="Karlovarský kraj" href="https://www.kr-karlovarsky.cz/">
+        <img src="images/Karlovarskkraj.png" alt="Karlovarský kraj" width="25" height="25">
+      </a>
+    </div>
 </nav>
 <!-- Boční lišta -->
 <!-- ////////////////////////////////////-->
