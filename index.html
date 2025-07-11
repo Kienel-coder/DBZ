@@ -37,13 +37,16 @@
     <!-- CSS - bootstrap je určen i pro ovládání Hamburger menu (je to framework)-->
 	<link rel="stylesheet" href="css/Icons.css">
     <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
-	    <link rel="stylesheet" href="Bootstrap-5.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="Bootstrap-5.0.2/css/bootstrap.min.css">
 	
     <!-- Vlastní CSS-->
     <link rel="stylesheet" href="css/Kienel.css">
 		
     <!-- Přidání vlastního CSS pro hamburger menu -->
     <link rel="stylesheet" href="css/mobile-menu.css">
+	
+	<!-- Přidání vlastního CSS pro responsivní vzhled -->
+    <link rel="stylesheet" href="css/Responsive Extra velký display.css">
 	
     <!-- Script nutný pro AdobeAnimate-->
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>	
@@ -61,7 +64,7 @@
 <nav id="HorniListaBilyPodklad">
     <div class="HorniLista">
         <img class="LogoDivadlo" src="images/Divadlo.jpg" alt="Divadlo bez zákulisí" width="60">  
-        <span class="NapisDivadlo">Divadlo bez zákulisí</span>
+        <span class="NapisDivadlo">Divadlo bez zákulisí3</span>
 
 		<div class="darkTheme">
 		        <ul>
@@ -145,10 +148,12 @@
         </ul>
 		</div>
 		
-		  <a class="menu-iconZivyKraj" data-type="Custom" title="Živý kraj" href="https://zivykraj.cz/"><span><img src="images/ivkraj.png" alt="" width="25" height="25" ></span>
+		  <a class="menu-iconZivyKraj" data-type="Custom" title="Živý kraj" href="https://zivykraj.cz/">
+		  <span><img src="images/ivkraj.png" alt="" width="25" height="25" ></span>
           </a>
 		
-          <a class="menu-iconKarlovarskyKraj" data-type="Custom" title="Karlovarský kraj" href="https://www.kr-karlovarsky.cz/"><span><img src="images/Karlovarskkraj.png" alt="" width="25" height="25" ></span>
+          <a class="menu-iconKarlovarskyKraj" data-type="Custom" title="Karlovarský kraj" href="https://www.kr-karlovarsky.cz/">
+          <span><img src="images/Karlovarskkraj.png" alt="Karlovarský kraj" width="25" height="25"></span>
           </a>
 		
 		  <a class="menu-iconHamburger" data-type="Custom" title="Menu" onclick="toggleMenu()"><span>&#9776; <!-- Unicode znak pro hamburger menu --></span> 
@@ -275,18 +280,18 @@
 <!-- //                                             SCRIPTY JS (načítání)                                        // -->
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
         <script src="JS/jquery-1.12.0.min.js" async></script>
-	    <script src="JS/BocniPanel.js" async></script> 	 
-        <script src="JS/Ovládání.js" async></script> 
-	    <script src="JS/mobile-menu.js"></script>
-        <script src="Other/01 Domu/BL.js" async></script>  	 
-        <script src="Other/01 Domu/CreateCanvasBL.js" async></script>
-	    <script src="Bootstrap-5.0.2/js/bootstrap.js" async></script>
+	    <!--<script src="JS/BocniPanel.js" async></script> -->	 
+        <!--<script src="JS/Ovládání.js" async></script> -->
+	    <script src="JS/Kienel.js"></script>
+<!--        <script src="Other/01 Domu/BL.js" async></script>  	 
+        <script src="Other/01 Domu/CreateCanvasBL.js" async></script>-->
+	   <!-- <script src="Bootstrap-5.0.2/js/bootstrap.js" async></script>-->
 	
 	    <!--Funkce pro změnu obsahu na základě velikosti obrazovky-->
 	    <!--CSS neumí měnit text, proto to řeším pomocí Javascriptu-->
 	    <script>
 
-             function updateContentBasedOnWidth() {
+             /*function updateContentBasedOnWidth() {
                  const element = document.querySelector('.NapisDivadlo');
                  const mediaQuery = window.matchMedia('(max-width: 479px)');
       
@@ -300,7 +305,7 @@
              }
 
             //Zavolat funkci při načtení stránky
-            updateContentBasedOnWidth();
+            updateContentBasedOnWidth();*/
 
 /*function zjistiZarizeni() {
     const sirka = window.innerWidth;

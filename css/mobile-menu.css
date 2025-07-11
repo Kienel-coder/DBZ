@@ -3,7 +3,7 @@
 ----------------------------------------------------- */
 .menu-iconZivyKraj {
     font-size: 25px;
-	width: 55px;
+	width: 70px;
     cursor: pointer;
 	visibility: visible;
 	margin-left: auto;
@@ -11,10 +11,15 @@
 
 .menu-iconKarlovarskyKraj {
     font-size: 25px;
-	width: 55px;
+	width: 100px; /*tohle urcuje jen mezery mezi ikonami*/
     cursor: pointer;
 	visibility: visible;
 }
+
+
+/* ---------------------------------------------------
+    éiv˝ a Karlovarsk˝ kraj
+----------------------------------------------------- */
 
 /* ---------------------------------------------------
     Menu
@@ -90,7 +95,7 @@
 	.NapisDivadlo
 	{
 	font-family: 'EB Garamond', serif;
-    font-size: 25px;
+    font-size: 32px;
 		
     }
 /* ---------------------------------------------------
@@ -125,6 +130,7 @@
 }
 
 
+
 /* üì± MOBIL (do 768px) */
 @media (min-width : 480px ) and ( max-width : 767px ){
 	 .darkTheme
@@ -140,12 +146,13 @@
     }
 	
 	.NapisDivadlo{
-	font-size: 1.8em;
+	font-size: 32px;
     }
 
 }
 
-/* üíª TABLET a men≈°√≠ DESKTOP (768px a≈æ 1024px) - m≈Øj telefon*/
+
+/* üíª TABLET a men≈°√≠ DESKTOP (768px a≈æ 1024px) - muj telefon*/
 @media (min-width : 768px ) and ( max-width : 1024px ){
      .darkTheme
      {
@@ -153,25 +160,56 @@
      }
 	
     .menu-iconHamburger {
-    font-size: 105px;
-	width: 105px;
+    font-size: 60px;
+	width: 45px;
     cursor: pointer;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0px 5px 0px;
     }
 	
 	.NapisDivadlo{
-	font-size: 45px;
+	font-size: 32px;
     }
 	  .Uvitani {
 		  font-family: 'EB Garamond', serif;
     font-size: 50px;
   }
 
-	.menu-iconKarlovarskyKraj {
-    font-size: 25px;
-	width: 65px;
-    cursor: pointer;
-	visibility: visible;
+  .menu-iconKarlovarskyKraj img {
+    width: 70px;
+	  height: 70px;
+  }
+	.menu-iconZivyKraj img{
+		    width: 70px;
+	  height: 70px;
+	}
+	
+	.LogoDivadlo{
+		width: 80px;	
+}
+	#HorniListaBilyPodklad 
+{
+	position: fixed;
+	width: 100%;
+	height:105px;
+	padding: 5px 5px 0px 5px;
+    background: white;
+    color:white;
+	align-items: center; /* Vertik·lnÌ zarovn·nÌ na stred */
+	z-index: 1000; /* ZajistÌ, ûe menu bude nad ostatnÌm obsahem */  
+}
+	
+	.HorniLista /*opona*/
+{
+	height: 93px;
+  background: darkred;
+  background:url(../images/Opona.png); 
+  padding: 5px 25px 5px 5px;
+  font-family: "Times New Roman", Times, serif;
+  font-family: cursive;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center; /* Vertik·lnÌ zarovn·nÌ na stred */
+  gap: 20px; /* Vzd·lenost mezi jednotliv˝mi ikonami */
 }
 
 }
@@ -195,18 +233,36 @@
 	.NapisDivadlo{
 	font-size: 0.8em;
     }
+		.HorniLista /*opona*/
+{
+	height: 93px;
+  background: darkred;
+  background:url(../images/Opona.png); 
+  padding: 5px 25px 5px 5px;
+  font-family: "Times New Roman", Times, serif;
+  font-family: cursive;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center; /* Vertik·lnÌ zarovn·nÌ na stred */
+  gap: 20px; /* Vzd·lenost mezi jednotliv˝mi ikonami */
+}
+		#HorniListaBilyPodklad 
+{
+	position: fixed;
+	width: 100%;
+	height:105px;
+	padding: 5px 5px 0px 5px;
+    background: white;
+    color:white;
+	align-items: center; /* Vertik·lnÌ zarovn·nÌ na stred */
+	z-index: 1000; /* ZajistÌ, ûe menu bude nad ostatnÌm obsahem */  
 }
 
-/* üñ•Ô∏è DESKTOP (Extra velk√Ω monitor) */
-@media (min-width : 1349px ){
-    .menu-iconHamburger {
-    font-size: 25px;
-	width: 25px;
-    cursor: pointer;
-	display: none;
-    padding: 0px 0px 0px 0px;
-    }
+
 }
+
+
+
 
 
 

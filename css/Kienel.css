@@ -41,34 +41,11 @@ html, body
             min-height: 100vh; /* Nastaví minimální výšku na výšku viewportu */
 }
 
-#HorniListaBilyPodklad 
-{
-	position: fixed;
-	width: 100%;
-	height:80px;
-	padding: 5px 5px 0px 5px;
-    background: white;
-    color:white;
-	align-items: center; /* Vertikální zarovnání na střed */
-	z-index: 1000; /* Zajistí, že menu bude nad ostatním obsahem */  
-}
 
-.HorniLista
-{
-  background: darkred;
-  background:url(../images/Opona.png); 
-  padding: 5px 25px 5px 5px;
-  font-family: "Times New Roman", Times, serif;
-  font-family: cursive;
-  font-size: 1.5em;
-  display: flex;
-  align-items: center; /* Vertikální zarovnání na střed */
-  gap: 20px; /* Vzdálenost mezi jednotlivými ikonami */
-}
 
-.NapisDivadlo{
-	/*padding: 5px 5px 5px 10px;*/
-}
+
+
+
 
 /* ---------------------------------------------------
     Tmavý ovál s ikonami
