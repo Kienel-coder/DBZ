@@ -46,8 +46,10 @@
     <link rel="stylesheet" href="css/mobile-menu.css">
 	
 	<!-- Přidání vlastního CSS pro responsivní vzhled -->
-    <link rel="stylesheet" href="css/Responsive Extra velký display.css">
+	<link rel="stylesheet" href="css/Responsive 768-1274.css">
 	<link rel="stylesheet" href="css/Responsive Desktop 1275 a víc.css">
+    <link rel="stylesheet" href="css/Responsive Extra velký display.css">
+	
 	
     <!-- Script nutný pro AdobeAnimate-->
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>	
@@ -155,7 +157,7 @@
     </div><!-- konec horní lišty -->
 	
 	<!-- Hamburger Menu, které se zobrazí při kliknutí -->
-    <div id="menu" class="d-none">
+    <div id="menu-iconHamburger" class="d-none">
         <ul>
 			    <li class="active">
                     <a id="iconaDomuHamburger" href="index.html">
@@ -235,16 +237,26 @@
                 </li>
         </ul>
     </div>
-	    <!-- Přidáme nový wrapper pro ikony na pravé straně -->
-    <div class="right-icons">
-      <a class="menu-iconZivyKraj" data-type="Custom" title="Živý kraj" href="https://zivykraj.cz/">
-        <img src="images/ivkraj.png" alt="" width="25" height="25" >
-      </a>
-      <a class="menu-iconKarlovarskyKraj" data-type="Custom" title="Karlovarský kraj" href="https://www.kr-karlovarsky.cz/">
-        <img src="images/Karlovarskkraj.png" alt="Karlovarský kraj" width="25" height="25">
-      </a>
-    </div>
+
+<div class="BoxZivyKarlovarsky" style="width: 140px; padding: 20px;">
+  <div class="BoxZivyKarlovarskyGap" style="display: flex; justify-content: flex-end;">
+    <a class="menu-iconZivyKraj" href="https://zivykraj.cz/" title="Živý kraj">
+      <img src="images/ivkraj.png" alt="Živý kraj" width="45" height="45" />
+    </a>
+    <a class="menu-iconKarlovarskyKraj" href="https://www.kr-karlovarsky.cz/" title="Karlovarský kraj" style="margin-left: 10px;">
+      <img src="images/Karlovarskkraj.png" alt="Karlovarský kraj" width="45" height="45" />
+    </a>
+	  
+  </div>
+	<div class="menu-iconHamburger" onclick="toggleMenu()">☰</div>
+	
+	
+</div>
+	
 </nav>
+	
+
+
 <!-- Boční lišta -->
 <!-- ////////////////////////////////////-->
 

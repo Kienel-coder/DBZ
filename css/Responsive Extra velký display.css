@@ -23,13 +23,26 @@
     display: none;
     padding: 0px 0px 0px 0px;
   }
-  .menu-iconKarlovarskyKraj img {
-    width: 40px;
-    height: 40px;
+.BoxZivyKarlovarsky {
+  position: fixed;     /* nebo absolute, pokud je rodic relativne pozicovaný */
+  top: 10px;           /* odsazení od horní hrany okna */
+  right: 5px;         /* odsazení od pravé hrany okna */
+  display: flex;
+
+  /*z-index: 1000;       /* aby byly nad vším ostatním */
+  /*background: transparent; /* pokud chceš pruhledné pozadí */
+}
+	.BoxZivyKarlovarskyGap {
+gap: 10px;
+}
+	
+.menu-iconKarlovarskyKraj img {
+    width: 50px;
+    height: 50px;
   }
   .menu-iconZivyKraj img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
   .LogoDivadlo {
     width: 80px;

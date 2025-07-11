@@ -1,30 +1,25 @@
-/* DESKTOP (1075px a víc) */
-@media (min-width : 1275px ) and ( max-width : 1348px ){
-.darkTheme
-{
-	margin-left: 1px;
-  padding: 5px 25px 0px 5px;
-  font-family: cursive;
-  font-size: 12px;
-}
+/*TABLET a menÅ¡Ã­ DESKTOP (768px aÅ¾ 1024px) - muj telefon*/
+@media (min-width : 768px ) and ( max-width : 1274px ){
+     .darkTheme
+     {
+     display: none;
+     }
 	
-
     .menu-iconHamburger {
-    font-size: 25px;
-	width: 25px;
+    font-size: 60px;
+	width: 45px;
     cursor: pointer;
-	display: none;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0px 5px 0px;
     }
-	  .LogoDivadlo {
-    width: 80px;
-  }
+	
 	.NapisDivadlo{
-	font-size: 30px;
-		white-space: nowrap; /*zabrání zalomení textu*/
+	font-size: 32px;
     }
-	
-	
+	  .Uvitani {
+		  font-family: 'EB Garamond', serif;
+    font-size: 50px;
+  }
+
 .BoxZivyKarlovarsky {
   position: fixed;     /* nebo absolute, pokud je rodič relativně pozicovaný */
   top: 10px;           /* odsazení od horní hrany okna */
@@ -46,7 +41,23 @@ gap: 10px;
     width: 50px;
     height: 50px;
   }
-		.HorniLista /*opona*/
+	
+	.LogoDivadlo{
+		width: 80px;	
+}
+	#HorniListaBilyPodklad 
+{
+	position: fixed;
+	width: 100%;
+	height:105px;
+	padding: 5px 5px 0px 5px;
+    background: white;
+    color:white;
+	align-items: center; /* Vertikální zarovnání na stred */
+	z-index: 1000; /* Zajistí, že menu bude nad ostatním obsahem */  
+}
+	
+	.HorniLista /*opona*/
 {
 	height: 93px;
   background: darkred;
@@ -59,14 +70,10 @@ gap: 10px;
   align-items: center; /* Vertikální zarovnání na stred */
   gap: 20px; /* Vzdálenost mezi jednotlivými ikonami */
 }
-		#HorniListaBilyPodklad 
-{
-	position: fixed;
-	width: 100%;
-	height:105px;
-	padding: 5px 5px 0px 5px;
-    background: white;
-    color:white;
-	align-items: center; /* Vertikální zarovnání na stred */
-	z-index: 1000; /* Zajistí, že menu bude nad ostatním obsahem */  
+
 }
+
+
+
+
+
