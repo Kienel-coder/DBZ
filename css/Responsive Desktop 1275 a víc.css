@@ -8,23 +8,14 @@
   font-size: 12px;
 }
 	
-
-	
 .right-icons {
-
-  position: fixed;       /* pevná pozice vzhledem k oknu */
-  top: 30px;             /* odsazení od horního okraje, můžeš upravit */
-  right: 0;              /* úplně na pravý okraj okna */
-  display: flex;         /* aby byly vedle sebe */
-  gap: 10px;             /* mezera mezi ikonami */
-  padding-right: 10px;   /* odsazení od pravého okraje, můžeš upravit na 0 */
-  background: transparent; /* pokud chceš, aby pozadí nebylo */
-  z-index: 1000;         /* aby byly nad ostatním obsahem */
+  display: flex;
+  gap: 10px;
 }
 
 .right-icons a img {
-  width: 45px;
-  height: 45px;
+  width: 25px;
+  height: 25px;
   display: block;
   cursor: pointer;
 }
