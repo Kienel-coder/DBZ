@@ -1,76 +1,210 @@
-/* ---------------------------------------------------
-    DESKTOP (Extra velký monitor)
------------------------------------------------------ */
-@media (min-width : 1349px) {
-  .darkTheme {
-    margin-left: 1px;
-    background: #222;
-    position: relative;
-    opacity: .6;
-    padding: 0px 25px 0px 0px;
-    font-family: "Times New Roman", Times, serif;
-    font-family: cursive;
-    font-size: 14px;
-    align-items: center; /* Vertikální zarovnání na stred */
-    gap: 20px; /* Vzdálenost mezi jednotlivými ikonami */
-    border-radius: 10px; /* Zaoblení rohu kontejneru */
-    height: 60px;
-  }
-  .menu-iconHamburger {
-    font-size: 25px;
-    width: 25px;
-    cursor: pointer;
-    display: none;
-    padding: 0px 0px 0px 0px;
-  }
-.BoxZivyKarlovarsky {
-  position: fixed;     /* nebo absolute, pokud je rodic relativne pozicovaný */
-  top: 10px;           /* odsazení od horní hrany okna */
-  right: 5px;         /* odsazení od pravé hrany okna */
-  display: flex;
+/* ==========================================================================
+   RESPONSIVE STYLES - MOBILE & EXTRA LARGE DISPLAYS
+   Optimized for Divadlo bez zÃ¡kulisÃ­
+   ========================================================================== */
 
-  /*z-index: 1000;       /* aby byly nad vším ostatním */
-  /*background: transparent; /* pokud chceš pruhledné pozadí */
+/* ---------------------------------------------------
+   MOBILE PHONES (up to 479px)
+   --------------------------------------------------- */
+@media (max-width: 479px) {
+    .darkTheme {
+        display: none;
+    }
+    
+    .menu-iconHamburger {
+        font-size: 25px;
+        width: 25px;
+        cursor: pointer;
+        padding: 8px;
+        background: rgba(255,255,255,0.9);
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    
+    .NapisDivadlo {
+        font-size: 1.1em;
+        white-space: nowrap;
+    }
+    
+    .Uvitani {
+        font-size: 28px;
+        margin: 1rem 0;
+        padding: 0 1rem;
+    }
+    
+    .GlassOrbs-image {
+        max-width: 150px;
+    }
+    
+    .BoxZivyKarlovarsky {
+        position: fixed;
+        top: 5px;
+        right: 5px;
+        padding: 5px;
+    }
+    
+    .BoxZivyKarlovarsky img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+    
+    .footer-content {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+    
+    .Podpis {
+        bottom: 60px;
+        right: 10px;
+        font-size: 0.7em;
+        width: auto;
+    }
+    
+    #menu-iconHamburger {
+        top: 50px;
+        left: 5px;
+        right: 5px;
+        width: calc(100vw - 20px);
+        max-height: calc(100vh - 80px);
+    }
 }
-	.BoxZivyKarlovarskyGap {
-gap: 10px;
+
+/* ---------------------------------------------------
+   MOBILE TABLETS (480px - 767px)
+   --------------------------------------------------- */
+@media (min-width: 480px) and (max-width: 767px) {
+    .darkTheme {
+        display: none;
+    }
+    
+    .menu-iconHamburger {
+        font-size: 45px;
+        width: 45px;
+        cursor: pointer;
+        padding: 10px;
+        background: rgba(255,255,255,0.9);
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    
+    .NapisDivadlo {
+        font-size: 32px;
+    }
+    
+    .Uvitani {
+        font-size: 40px;
+        margin: 1.5rem 0;
+    }
+    
+    .GlassOrbs-image {
+        max-width: 180px;
+    }
+    
+    .BoxZivyKarlovarsky {
+        top: 8px;
+        right: 8px;
+        padding: 8px;
+    }
+    
+    .BoxZivyKarlovarsky img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    #menu-iconHamburger {
+        top: 70px;
+        left: 8px;
+        right: 8px;
+        width: calc(100vw - 26px);
+    }
 }
-	
-.menu-iconKarlovarskyKraj img {
-    width: 50px;
-    height: 50px;
-  }
-  .menu-iconZivyKraj img {
-    width: 50px;
-    height: 50px;
-  }
-  .LogoDivadlo {
-    width: 80px;
-  }
-  .NapisDivadlo {
-    font-size: 30px;
-	white-space: nowrap; /*zabrání zalomení textu*/
-  }
-  .HorniLista /*opona*/ {
-    height: 93px;
-    background: darkred;
-    background: url(../images/Opona.png);
-    padding: 5px 25px 5px 5px;
-    font-family: "Times New Roman", Times, serif;
-    font-family: cursive;
-    font-size: 1.5em;
-    display: flex;
-    align-items: center; /* Vertikální zarovnání na stred */
-    gap: 20px; /* Vzdálenost mezi jednotlivými ikonami */
-  }
-  #HorniListaBilyPodklad {
-    position: fixed;
-    width: 100%;
-    height: 105px;
-    padding: 5px 5px 0px 5px;
-    background: white;
-    color: white;
-    align-items: center; /* Vertikální zarovnání na stred */
-    z-index: 1000; /* Zajistí, že menu bude nad ostatním obsahem */
-  }
+
+/* ---------------------------------------------------
+   EXTRA LARGE DISPLAYS (1600px and up)
+   --------------------------------------------------- */
+@media (min-width: 1600px) {
+    .Uvitani {
+        font-size: 80px;
+        margin: 4rem 0;
+    }
+    
+    .NapisDivadlo {
+        font-size: 45px;
+    }
+    
+    .LogoDivadlo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .GlassOrbs-image {
+        max-width: 350px;
+    }
+    
+    .darkTheme {
+        font-size: 1em;
+        padding: 0 35px 15px 8px;
+        gap: 30px;
+    }
+    
+    .darkTheme .active .iconHome {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .HorniLista {
+        gap: 30px;
+        padding: 8px 35px 8px 8px;
+    }
+    
+    .footer-content {
+        padding: 40px;
+        font-size: 1.1em;
+    }
+    
+    .footer-section h2 {
+        font-size: 1.6em;
+        margin-bottom: 20px;
+    }
+    
+    .BoxZivyKarlovarsky {
+        top: 20px;
+        right: 20px;
+        padding: 20px;
+    }
+    
+    .menu-iconKarlovarskyKraj img,
+    .menu-iconZivyKraj img {
+        width: 65px !important;
+        height: 65px !important;
+    }
+}
+
+/* ---------------------------------------------------
+   ULTRA WIDE DISPLAYS (2000px and up)
+   --------------------------------------------------- */
+@media (min-width: 2000px) {
+    .Uvitani {
+        font-size: 100px;
+        margin: 5rem 0;
+    }
+    
+    .GlassOrbs-image {
+        max-width: 400px;
+    }
+    
+    .footer-content {
+        padding: 50px;
+        font-size: 1.2em;
+    }
+    
+    .darkTheme {
+        font-size: 1.1em;
+        gap: 40px;
+    }
+    
+    .darkTheme .active .iconHome {
+        width: 70px;
+        height: 70px;
+    }
 }

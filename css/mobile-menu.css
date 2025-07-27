@@ -1,154 +1,196 @@
+/* ==========================================================================
+   MOBILE MENU STYLES
+   Optimized for Divadlo bez zákulisí with improved accessibility
+   ========================================================================== */
+
 /* ---------------------------------------------------
-    Živý a Karlovarský kraj
------------------------------------------------------ */
+   External Links - Živý and Karlovarský kraj
+   --------------------------------------------------- */
 .menu-iconZivyKraj {
     font-size: 25px;
-	width: 40px;
+    width: 40px;
     cursor: pointer;
-	visibility: visible;
-	margin-left: auto;
+    visibility: visible;
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+.menu-iconZivyKraj:hover {
+    transform: scale(1.1);
 }
 
 .menu-iconKarlovarskyKraj {
     font-size: 25px;
-	width: 150px; /*tohle urcuje jen mezery mezi ikonami*/
+    width: 150px;
     cursor: pointer;
-	visibility: visible;
+    visibility: visible;
+    transition: transform 0.3s ease;
 }
 
+.menu-iconKarlovarskyKraj:hover {
+    transform: scale(1.1);
+}
 
 /* ---------------------------------------------------
-    �iv� a Karlovarsk� kraj
------------------------------------------------------ */
-
-/* ---------------------------------------------------
-    Menu
------------------------------------------------------ */
-
+   Mobile Menu Toggle Button
+   --------------------------------------------------- */
 .menu-iconHamburger {
     font-size: 25px;
-	width: 25px;
+    width: 25px;
     cursor: pointer;
-	visibility: visible;
-}
-
-#menu {
-    display: block; /* Menu je skryté, dokud se nezobrazí */
-    /*position: absolute;*/
-    /*top: 60px; /* Pozice menu */
-    /*right: 1000px;*/
-    background: #222; /* Barva pozadí menu */
-    border: 1px solid #ddd; /* Okraje menu */
-    padding: 10px;
+    visibility: visible;
+    background: none;
+    border: none;
+    color: #333;
+    padding: 5px;
     border-radius: 4px;
-    width: 500px; /* Pevná šířka menu */
-	
-    position: fixed; /* Fixní pozice */
-    top: 60; /* Umístění od horního okraje */
-    left: 10; /* Umístění od levého okraje */
-
-    /*height: 100%; /* Výška menu na celou výšku obrazovky */
-
-    box-sizing: border-box; /* Zahrnuje padding a border do šířky a výšky */
-    overflow-y: auto; /* Přidá posuvník, pokud je obsah vyšší než výška menu */
+    transition: all 0.3s ease;
 }
 
+.menu-iconHamburger:hover {
+    background-color: rgba(0,0,0,0.1);
+    transform: scale(1.1);
+}
 
-#menu ul {
+.menu-iconHamburger:focus {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
+}
+
+/* ---------------------------------------------------
+   Mobile Menu Container
+   --------------------------------------------------- */
+#menu-iconHamburger {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 10px;
+    background: #222;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    width: min(90vw, 400px);
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+    animation: slideIn 0.3s ease-out;
+}
+
+#menu-iconHamburger.show {
+    display: block;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------------------------------------------------
+   Mobile Menu Items
+   --------------------------------------------------- */
+#menu-iconHamburger ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-#menu ul li {
+#menu-iconHamburger li {
     margin-bottom: 10px;
-
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
 }
 
-#menu ul li a {
+#menu-iconHamburger li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+#menu-iconHamburger a {
+    color: white;
     text-decoration: none;
-    color: #fff; /* Barva textu */
-
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 16px;
 }
 
+#menu-iconHamburger a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: #ccc;
+}
 
-.hidden {
-    display: none; /* Při prvním spuštění bude Hambureg menu schované */
+#menu-iconHamburger a:focus {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
+}
+
+#menu-iconHamburger img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+#menu-iconHamburger a:hover img {
+    transform: scale(1.1);
+}
+
+/* Active menu item styling */
+#menu-iconHamburger .active a {
+    background-color: rgba(255,255,255,0.2);
+    font-weight: 600;
 }
 
 /* ---------------------------------------------------
-    Text h1 - Uvitani
------------------------------------------------------ */
-.Uvitani {
-    font-family: 'EB Garamond', serif;
-    font-size: 45px;
-	text-align: center; /* Horizontální zarovnání obsahu na střed */
-	
-	           color: white; /* Barva textu */
-            text-shadow: 
-                0 0 5px blue, /* Modrá záře kolem textu */
-                0 0 1px blue, /* Silnější modrá záře */
-                0 0 5px blue, /* Ještě silnější modrá záře */
-                0 0 2px blue; /* Největší modrá záře */
-        }
-
-	.NapisDivadlo
-	{
-	font-family: 'EB Garamond', serif;
-    font-size: 32px;
-		
-    }
-/* ---------------------------------------------------
-    vzor
------------------------------------------------------ */
-/* 📱 Menší MOBIL (do 480px) */
-/* Styl pro mobilní zařízení (menší než 480px) */
-@media (max-width : 479px ){
-	 .darkTheme
-     {
-     display: none;
-     }
-	
+   Responsive Adjustments
+   --------------------------------------------------- */
+@media (max-width: 768px) {
     .menu-iconHamburger {
-    font-size: 25px;
-	width: 25px;
-    cursor: pointer;
-    padding: 0px 0px 0px 0px;
+        font-size: 30px;
+        width: 30px;
+        padding: 8px;
     }
-	
-	.NapisDivadlo
-	{
-	font-size: 1.1em;
-		
+    
+    #menu-iconHamburger {
+        top: 60px;
+        left: 5px;
+        width: calc(100vw - 20px);
+        padding: 10px;
     }
-	
-	/*.NapisDivadlo::after {
-    content: "222";  Text, který bude přidán za obsah 
-    font-size: 9.1.9em; Velikost písma pro přidaný text 
-    color: red;  Barva přidaného textu 
-    }*/
 }
 
-
-
-/* 📱 MOBIL (do 768px) */
-@media (min-width : 480px ) and ( max-width : 767px ){
-	 .darkTheme
-     {
-     display: none;
-     }
-	
-    .menu-iconHamburger {
-    font-size: 45px;
-	width: 45px;
-    cursor: pointer;
-    padding: 0px 0px 0px 0px;
+/* ---------------------------------------------------
+   Accessibility Improvements
+   --------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+    #menu-iconHamburger,
+    .menu-iconHamburger,
+    .menu-iconZivyKraj,
+    .menu-iconKarlovarskyKraj {
+        animation: none;
+        transition: none;
     }
-	
-	.NapisDivadlo{
-	font-size: 32px;
-    }
+}
 
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    #menu-iconHamburger {
+        border: 2px solid #fff;
+        background: #000;
+    }
+    
+    #menu-iconHamburger a {
+        color: #fff;
+    }
 }
 
 
