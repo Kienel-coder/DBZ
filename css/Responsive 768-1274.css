@@ -1,76 +1,118 @@
-/*TABLET a menÅ¡Ã­ DESKTOP (768px aÅ¾ 1024px) - muj telefon*/
-@media (min-width : 768px ) and ( max-width : 1274px ){
-     .darkTheme
-     {
-     display: none;
-     }
-	
+/* ==========================================================================
+   RESPONSIVE STYLES - TABLET & SMALLER DESKTOP (768px - 1274px)
+   Optimized for Divadlo bez zákulisí
+   ========================================================================== */
+
+@media (min-width: 768px) and (max-width: 1274px) {
+    
+    /* ---------------------------------------------------
+       Navigation Adjustments
+       --------------------------------------------------- */
+    .darkTheme {
+        display: none;
+    }
+    
     .menu-iconHamburger {
-    font-size: 60px;
-	width: 45px;
-    cursor: pointer;
-    padding: 0px 0px 5px 0px;
+        font-size: 60px;
+        width: 45px;
+        cursor: pointer;
+        padding: 0;
+        border: none;
+        background: transparent;
+        color: #333;
+        transition: transform 0.3s ease;
     }
-	
-	.NapisDivadlo{
-	font-size: 32px;
+    
+    .menu-iconHamburger:hover {
+        transform: scale(1.1);
     }
-	  .Uvitani {
-		  font-family: 'EB Garamond', serif;
-    font-size: 50px;
-  }
-
-.BoxZivyKarlovarsky {
-  position: fixed;     /* nebo absolute, pokud je rodič relativně pozicovaný */
-  top: 10px;           /* odsazení od horní hrany okna */
-  right: 5px;         /* odsazení od pravé hrany okna */
-  display: flex;
-
-  /*z-index: 1000;       /* aby byly nad vším ostatním */
-  /*background: transparent; /* pokud chceš průhledné pozadí */
-}
-	.BoxZivyKarlovarskyGap {
-gap: 10px;
-}
-	
-.menu-iconKarlovarskyKraj img {
-    width: 50px;
-    height: 50px;
-  }
-  .menu-iconZivyKraj img {
-    width: 50px;
-    height: 50px;
-  }
-	
-	.LogoDivadlo{
-		width: 80px;	
-}
-	#HorniListaBilyPodklad 
-{
-	position: fixed;
-	width: 100%;
-	height:105px;
-	padding: 5px 5px 0px 5px;
-    background: white;
-    color:white;
-	align-items: center; /* Vertikální zarovnání na stred */
-	z-index: 1000; /* Zajistí, že menu bude nad ostatním obsahem */  
-}
-	
-	.HorniLista /*opona*/
-{
-	height: 93px;
-  background: darkred;
-  background:url(../images/Opona.png); 
-  padding: 5px 25px 5px 5px;
-  font-family: "Times New Roman", Times, serif;
-  font-family: cursive;
-  font-size: 1.5em;
-  display: flex;
-  align-items: center; /* Vertikální zarovnání na stred */
-  gap: 20px; /* Vzdálenost mezi jednotlivými ikonami */
-}
-
+    
+    /* ---------------------------------------------------
+       Typography Adjustments
+       --------------------------------------------------- */
+    .NapisDivadlo {
+        font-size: 32px;
+        font-weight: 600;
+    }
+    
+    .Uvitani {
+        font-family: 'EB Garamond', serif;
+        font-size: 50px;
+        font-weight: 600;
+        text-align: center;
+        margin: 2rem 0;
+    }
+    
+    /* ---------------------------------------------------
+       External Links Positioning
+       --------------------------------------------------- */
+    .BoxZivyKarlovarsky {
+        position: fixed;
+        top: 10px;
+        right: 5px;
+        display: flex;
+        z-index: 100;
+        background: transparent;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    
+    .BoxZivyKarlovarsky a {
+        transition: transform 0.3s ease;
+    }
+    
+    .BoxZivyKarlovarsky a:hover {
+        transform: scale(1.1);
+    }
+    
+    /* ---------------------------------------------------
+       Mobile Menu Adjustments
+       --------------------------------------------------- */
+    #menu-iconHamburger {
+        top: 80px;
+        left: 10px;
+        width: min(85vw, 500px);
+        max-height: calc(100vh - 120px);
+        font-size: 18px;
+    }
+    
+    #menu-iconHamburger img {
+        width: 35px;
+        height: 35px;
+        margin-right: 20px;
+    }
+    
+    /* ---------------------------------------------------
+       Content Adjustments
+       --------------------------------------------------- */
+    .GlassOrbs-image {
+        max-width: 200px;
+        height: auto;
+    }
+    
+    /* ---------------------------------------------------
+       Footer Adjustments
+       --------------------------------------------------- */
+    .footer-content {
+        padding: 15px;
+        font-size: 0.85em;
+    }
+    
+    .footer-section h2 {
+        font-size: 1.1em;
+        margin-bottom: 8px;
+    }
+    
+    .footer-section p {
+        font-size: 0.8em;
+        line-height: 1.3;
+    }
+    
+    .Podpis {
+        bottom: 80px;
+        right: 20px;
+        font-size: 0.9em;
+    }
 }
 
 

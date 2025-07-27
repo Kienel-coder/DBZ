@@ -1,72 +1,177 @@
-/* DESKTOP (1075px a víc) */
-@media (min-width : 1275px ) and ( max-width : 1348px ){
-.darkTheme
-{
-	margin-left: 1px;
-  padding: 5px 25px 0px 5px;
-  font-family: cursive;
-  font-size: 12px;
-}
-	
+/* ==========================================================================
+   RESPONSIVE STYLES - DESKTOP (1275px and up)
+   Optimized for Divadlo bez zákulisí
+   ========================================================================== */
 
+@media (min-width: 1275px) {
+    
+    /* ---------------------------------------------------
+       Navigation Enhancements
+       --------------------------------------------------- */
     .menu-iconHamburger {
-    font-size: 25px;
-	width: 25px;
-    cursor: pointer;
-	display: none;
-    padding: 0px 0px 0px 0px;
+        display: none; /* Hide hamburger menu on desktop */
     }
-	  .LogoDivadlo {
-    width: 80px;
-  }
-	.NapisDivadlo{
-	font-size: 30px;
-		white-space: nowrap; /*zabrání zalomení textu*/
+    
+    .darkTheme {
+        display: flex; /* Show desktop navigation */
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
     }
-	
-	
-.BoxZivyKarlovarsky {
-  position: fixed;     /* nebo absolute, pokud je rodič relativně pozicovaný */
-  top: 10px;           /* odsazení od horní hrany okna */
-  right: 5px;         /* odsazení od pravé hrany okna */
-  display: flex;
-
-  /*z-index: 1000;       /* aby byly nad vším ostatním */
-  /*background: transparent; /* pokud chceš průhledné pozadí */
-}
-	.BoxZivyKarlovarskyGap {
-gap: 10px;
-}
-	
-.menu-iconKarlovarskyKraj img {
-    width: 50px;
-    height: 50px;
-  }
-  .menu-iconZivyKraj img {
-    width: 50px;
-    height: 50px;
-  }
-		.HorniLista /*opona*/
-{
-	height: 93px;
-  background: darkred;
-  background:url(../images/Opona.png); 
-  padding: 5px 25px 5px 5px;
-  font-family: "Times New Roman", Times, serif;
-  font-family: cursive;
-  font-size: 1.5em;
-  display: flex;
-  align-items: center; /* Vertikální zarovnání na stred */
-  gap: 20px; /* Vzdálenost mezi jednotlivými ikonami */
-}
-		#HorniListaBilyPodklad 
-{
-	position: fixed;
-	width: 100%;
-	height:105px;
-	padding: 5px 5px 0px 5px;
-    background: white;
-    color:white;
-	align-items: center; /* Vertikální zarovnání na stred */
-	z-index: 1000; /* Zajistí, že menu bude nad ostatním obsahem */  
+    
+    .darkTheme:hover {
+        opacity: 1;
+    }
+    
+    /* ---------------------------------------------------
+       Header Styling
+       --------------------------------------------------- */
+    #HorniListaBilyPodklad {
+        position: fixed;
+        width: 100%;
+        height: 105px;
+        padding: 5px;
+        background: white;
+        color: white;
+        align-items: center;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .HorniLista {
+        height: 93px;
+        background: darkred;
+        background: url(../images/Opona.png);
+        background-size: cover;
+        background-position: center;
+        padding: 5px 25px 5px 5px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border-radius: 8px;
+    }
+    
+    /* ---------------------------------------------------
+       Logo and Typography
+       --------------------------------------------------- */
+    .LogoDivadlo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        transition: transform 0.3s ease;
+    }
+    
+    .LogoDivadlo:hover {
+        transform: scale(1.05);
+    }
+    
+    .NapisDivadlo {
+        font-family: 'EB Garamond', serif;
+        font-size: 38px;
+        font-weight: 600;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        margin-left: 15px;
+    }
+    
+    /* ---------------------------------------------------
+       Welcome Section
+       --------------------------------------------------- */
+    .Uvitani {
+        font-family: 'EB Garamond', serif;
+        font-size: 65px;
+        font-weight: 600;
+        text-align: center;
+        margin: 3rem 0;
+        color: #333;
+        text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+    }
+    
+    /* ---------------------------------------------------
+       External Links
+       --------------------------------------------------- */
+    .BoxZivyKarlovarsky {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        display: flex;
+        z-index: 100;
+        background: rgba(255,255,255,0.1);
+        padding: 15px;
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .BoxZivyKarlovarskyGap {
+        gap: 15px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .menu-iconKarlovarskyKraj img,
+    .menu-iconZivyKraj img {
+        width: 55px;
+        height: 55px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    
+    .menu-iconKarlovarskyKraj img:hover,
+    .menu-iconZivyKraj img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    
+    /* ---------------------------------------------------
+       Content Enhancements
+       --------------------------------------------------- */
+    .GlassOrbs-image {
+        max-width: 300px;
+        height: auto;
+        filter: drop-shadow(0 8px 20px rgba(0,0,0,0.3));
+    }
+    
+    /* ---------------------------------------------------
+       Footer Enhancements
+       --------------------------------------------------- */
+    .footer-content {
+        padding: 30px;
+        font-size: 1em;
+    }
+    
+    .footer-section h2 {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+    
+    .footer-section p {
+        font-size: 0.95em;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .Podpis {
+        bottom: 120px;
+        right: 50px;
+        font-size: 1em;
+        font-weight: 500;
+    }
+    
+    /* ---------------------------------------------------
+       Enhanced Interactions
+       --------------------------------------------------- */
+    .darkTheme a:hover .iconHome {
+        transform: scale(1.15) rotate(5deg);
+    }
+    
+    /* Smooth scrolling for desktop */
+    html {
+        scroll-behavior: smooth;
+    }
 }
